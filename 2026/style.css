@@ -9,4 +9,4 @@ footer{flex-wrap:wrap;gap:24px}footer .community-links{flex-basis:100%;margin-to
 
 .sponsor-grid .sponsor-link{display:block;width:100%;text-align:center}.sponsor-grid .sponsor-link img{display:block;margin:0 auto 8px}.sponsor-grid .sponsor-link .sponsor-name{display:block;margin:0;line-height:1.5}.sponsor-link:hover .sponsor-name{text-decoration:underline}
 
-@media(min-width:1000px){.sponsor-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.sponsor-grid img{max-width:100%}}
+@media(min-width:1000px){.sponsor-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.sponsor-grid img{max-width:100%}}
