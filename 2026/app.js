@@ -16,6 +16,7 @@ window.conferenceSpeakers.forEach((speaker, index) => {
     const tags = element('div', 'tags'); speaker.tags.forEach(tag => tags.append(element('span', '', tag)));
     card.append(top, tags, element('h4', '', speaker.title), element('p', 'session-description', speaker.description));
     if (speaker.url) { const link = element('a', 'session-link', '발표 관련 프로젝트 ↗'); link.href = speaker.url; link.target = '_blank'; link.rel = 'noopener noreferrer'; card.append(link); }
+    if (speaker.homepage) { const link = element('a', 'session-link', '개인 홈페이지 · webnori.com ↗'); link.href = speaker.homepage; link.target = '_blank'; link.rel = 'noopener noreferrer'; card.append(link); }
   }
   grid.append(card);
 });
