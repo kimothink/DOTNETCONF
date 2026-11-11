@@ -1,4 +1,4 @@
-// 빈 항목 3개의 name, title, description, image, tags, url을 채우면 발표 카드로 표시됩니다.
+// 빈 항목 1개의 name, title, description, image, tags, url을 채우면 발표 카드로 표시됩니다.
 window.conferenceSpeakers = [
   { name: '이호원', title: 'MSIX는 좋은데 배포가 어렵다? .NET으로 만드는 더블클릭 인스톨러 자동화', description: 'MSIX 포맷에 대한 전반적인 이야기를 다루고, AT-Installer의 제작기를 함께 공유합니다.', image: 'assets/lee-howon.png', tags: ['MSIX', '.NET', 'Deployment'], url: 'https://github.com/airtaxi/AT-Installer/blob/master/MSIX.ko.md', homepage: 'https://kagamine-rin.com' },
   { name: '박상만', title: '닷넷 액터모델로 만든 나만의 에이전트', description: '온디바이스로 구현되는 ADE Agent를 소개합니다. .NET 11 WPF와 Akka.NET, 온디바이스 스몰모델로 만드는 나만의 에이전트 이야기를 나눕니다.', image: 'assets/park-sangman.png', tags: ['.NET 11 WPF', 'Akka.NET', 'On-device AI'], url: 'https://github.com/psmon/AgentZeroLite/blob/main/README-KR.md', homepage: 'https://webnori.com/' },
@@ -7,7 +7,5 @@ window.conferenceSpeakers = [
   { name: '김진석', title: 'Welcome .NET 11: ASP.NET Core와 Blazor가 보여주는 웹 개발의 다음 장', description: '.NET 11의 정식 출시를 환영하며, 이번 릴리스에서 ASP.NET Core와 Blazor가 어떻게 달라졌는지 키노트로 정리합니다. 정적 SSR 클라이언트 검증, circuit 일시정지, WebAssembly 로드맵 등 Blazor의 변화와 union 타입, 비동기 검증, OpenTelemetry 등 ASP.NET Core의 핵심 기능을 소개합니다. .NET 10에서 업그레이드를 준비하는 개발자가 바로 활용할 포인트를 데모와 함께 전달합니다.', image: 'assets/kim-jinseok.png', tags: ['.NET 11', 'ASP.NET Core', 'Blazor'], url: '', blog: 'https://m.blog.naver.com/PostList.naver?blogId=khsystems2018&tab=1' },
   { name: '김준형', title: 'C#으로 산업용 프로토콜을 변환해주는 임베디드 장치 만들기', description: '마이크로컨트롤러에서 C# 코드를 실행할 수 있게 해주는 .NET nanoFramework을 소개하고, 이것을 활용하여 시리얼 통신 기반 프로토콜 지원 설비를 이더넷 기반 프로토콜로 연결하기 용이하도록 해주는 산업용 프로토콜 변환 장치를 만들어본 사례를 소개합니다.', image: 'assets/kim-junhyung.png', imagePosition: '85% 45%', tags: ['C#', '.NET nanoFramework', '임베디드'], url: '', homepage: 'https://k.vagabond.builders/' },
   { name: '송기수', title: '내 앱에 AI Agent를 입사시키기! (.NET 11로 만드는 Agentic Application)', description: '생성형 AI가 단순히 질문에 답하는 챗봇을 넘어, 애플리케이션의 기능을 직접 활용하고 작업을 수행하는 AI Agent로 발전하고 있습니다. 이번 세션에서는 .NET 11 기반의 Agentic Application 구현 방법을 살펴봅니다. Agentic UI를 통한 사용자와 AI의 협업 방식, Tool Calling 및 MCP를 활용한 기존 애플리케이션 기능 연동을 소개합니다.', image: 'assets/song-gisu.png', tags: ['.NET 11', 'AI Agent', 'MCP'], url: '' },
-  { name: '', title: '', description: '', image: '', tags: [], url: '' },
-  { name: '', title: '', description: '', image: '', tags: [], url: '' },
   { name: '', title: '', description: '', image: '', tags: [], url: '' }
 ];
