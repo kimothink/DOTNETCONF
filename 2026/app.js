@@ -5,7 +5,7 @@ function element(tag, className, text) {
   if (text) node.textContent = text;
   return node;
 }
-window.conferenceSpeakers.forEach((speaker, index) => {
+window.conferenceSpeakers.filter(speaker => !speaker.hidden).forEach((speaker, index) => {
   const card = element('article', speaker.name ? 'speaker-card' : 'speaker-card upcoming');
   if (!speaker.name) {
     card.append(element('span', 'slot-number', String(index + 1).padStart(2, '0')), element('span', 'upcoming-symbol', '＋'), element('h3', '', '다음 이야기를 준비 중입니다'), element('p', '', '발표자 · 세션 추후 공개'));
