@@ -9,3 +9,12 @@ window.conferenceSpeakers = [
   { name: '송기수', title: '내 앱에 AI Agent를 입사시키기! (.NET 11로 만드는 Agentic Application)', description: '생성형 AI가 단순히 질문에 답하는 챗봇을 넘어, 애플리케이션의 기능을 직접 활용하고 작업을 수행하는 AI Agent로 발전하고 있습니다. 이번 세션에서는 .NET 11 기반의 Agentic Application 구현 방법을 살펴봅니다. Agentic UI를 통한 사용자와 AI의 협업 방식, Tool Calling 및 MCP를 활용한 기존 애플리케이션 기능 연동을 소개합니다.', image: 'assets/song-gisu.png', tags: ['.NET 11', 'AI Agent', 'MCP'], url: '' },
   { name: '박주형', title: 'Why Separate Program Structure from Execution?', description: '혹시 프로그램을 짤때 씨실과 날실을 구분해서 짜시나요? 프로그래머들도 의식하지 못한 사이, 프로그램의 구조와 실행을 교차로 직조합니다. 여기서 구조와 실행이란 각각 무엇일까요? 늘 그래왔듯이 이 둘을 한 데 섞지 않고 분리해서 얻는 이점이 있을까요? 이번 발표에서는 F#의 Computation Expressions를 중심으로, 구조와 실행을 적은 부담으로 우아하게 분리하는 방법과 그 가치를 살펴봅니다. 더 나아가, 프로그램 실행 중에도 그 구조를 버리지 않는다면 어떤 새로운 가능성이 열릴지 함께 생각해 봅니다.', image: 'assets/park-juhyeong.png', tags: ['F#', 'Computation Expressions'], url: '' }
 ];
+
+window.conferenceSpeakers.unshift({
+  name: '유저스틴',
+  title: '더 빠르게, 더 안전하게, 더 똑똑하게: .NET 11',
+  description: '11월 10일, .NET 11이 출시됐습니다. 글로벌 .NET Conf 2026에서 소개된 여러 신기능 중 주목할 만한 다섯 가지를 골라 서울에서 다시 풀어 냅니다. 가벼워진 dotnet CLI와 파일 하나로 시작하는 C#, 컴파일러가 빠진 경우를 잡아 주는 C# 15 유니온 타입, GitHub Copilot과 함께하는 앱 현대화, 그리고 AI 앱과 에이전트까지. .NET 11이 개발을 어떻게 더 빠르게, 더 안전하게, 더 똑똑하게 만드는지 직접 확인해 보세요.',
+  image: 'assets/justin-user.png',
+  tags: ['.NET 11', 'C# 15', 'GitHub Copilot', 'AI Agents'],
+  url: ''
+});
