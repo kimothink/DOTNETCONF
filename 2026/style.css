@@ -10,3 +10,58 @@ footer{flex-wrap:wrap;gap:24px}footer .community-links{flex-basis:100%;margin-to
 .sponsor-grid .sponsor-link{display:block;width:100%;text-align:center}.sponsor-grid .sponsor-link img{display:block;margin:0 auto 8px}.sponsor-grid .sponsor-link .sponsor-name{display:block;margin:0;line-height:1.5}.sponsor-link:hover .sponsor-name{text-decoration:underline}
 
 @media(min-width:1000px){.sponsor-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.sponsor-grid img{max-width:100%}}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.timetable-note { color: var(--muted); font-size: 13px; margin: 0 0 24px; }
+.timetable-wrap { border: 1px solid #b99bff40; border-radius: 12px; overflow: hidden; }
+.program-table { width: 100%; border-collapse: collapse; table-layout: fixed; text-align: left; }
+.program-table thead { background: #35204f; color: #e2d4ff; }
+.program-table th, .program-table td { padding: 22px 24px; }
+.program-table thead th:first-child { width: 180px; }
+.program-table tbody th { font-size: 15px; color: #e2d4ff; white-space: nowrap; background: #b99bff0a; }
+.program-table tbody tr { border-top: 1px solid #b99bff30; }
+.program-table td { background: var(--panel); vertical-align: top; overflow-wrap: anywhere; }
+.program-table td + td { border-left: 1px solid #b99bff30; }
+.program-speaker { font-size: 17px; color: var(--purple); }
+.program-table p { font-size: 14px; line-height: 1.8; margin: 8px 0 0; }
+.program-track { display: none; }
+.program-break td { background: #35204f; font-size: 14px; font-weight: 600; }
+.schedule-note a { color: var(--purple); text-decoration: underline; text-underline-offset: 3px; }
+.giveaway { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.giveaway-intro { color: var(--muted); font-size: 14px; line-height: 1.9; margin: 24px 0; }
+.giveaway-time { color: var(--purple); font-size: 13px; }
+.prize-list { list-style: none; padding: 0; margin: 28px 0 0; }
+.prize-list li { display: flex; align-items: center; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.prize-list span { background: #b99bff18; color: var(--purple); border: 1px solid #b99bff40; border-radius: 50%; width: 44px; height: 44px; display: grid; place-items: center; font-size: 13px; flex-shrink: 0; }
+.prize-list strong { font-size: 18px; }
+.prize-list li:first-child span { background: #e8c77a18; border-color: #e8c77a50; color: #e8c77a; }
+.giveaway-poster-link { display: block; width: 100%; max-width: 420px; justify-self: end; }
+.giveaway-poster { display: block; width: 100%; height: auto; border: 1px solid #b99bff40; border-radius: 12px; }
+@media (max-width: 850px) {
+  nav { gap: 12px; }
+  .giveaway { gap: 28px; }
+  .program-table th, .program-table td { padding: 18px; }
+  .program-table thead th:first-child { width: 155px; }
+}
+@media (max-width: 600px) {
+  nav { flex-wrap: wrap; gap: 12px 18px; }
+  .timetable-note { font-size: 12px; }
+  .program-table, .program-table tbody, .program-table tr,
+  .program-table th, .program-table td { display: block; width: 100%; }
+  .program-table thead { display: none; }
+  .program-table tbody tr:first-child { border-top: 0; }
+  .program-table tbody th { background: #35204f; padding: 12px 18px; }
+  .program-table td + td { border-left: 0; border-top: 1px solid #b99bff30; }
+  .program-track { display: inline-block; font-size: 11px; color: var(--muted); margin-right: 12px; }
+  .program-table p { font-size: 13px; }
+  .giveaway { grid-template-columns: 1fr; }
+  .giveaway-poster-link { justify-self: center; }
+}
